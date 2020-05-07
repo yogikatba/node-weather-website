@@ -23,29 +23,29 @@ app.use(express.static(publicDirPath))
 app.get('',(req,res)=>{
     res.render('index', {
         title: 'Weather app',
-        name: 'Yogi'
+        name: 'Yogi Katba'
     })
 })
 
 app.get('/about', (req, res)=>{
     res.render('about', {
         title: 'About',
-        name: 'Yogi'
+        name: 'Yogi Katba'
     })
 })
 
 app.get('/help',(req,res)=>{
     res.render('help', {
-        helpText: 'some helpful text',
+        helpText: 'For any issues or help go to my ',
         title: 'Help',
-        name: 'Yogi'
+        name: 'Yogi Katba'
     })
 })
 
 app.get('/help/*',(req,res)=>{
     res.render('404',{
         title: '404',
-        name: 'Yogi',
+        name: 'Yogi Katba',
         errorMessage: 'Help article not found'
     })
 })
